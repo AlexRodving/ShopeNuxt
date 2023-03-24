@@ -1,3 +1,7 @@
+#Xiver ShopeNuxt
+
+![ShopeNuxt](https://user-images.githubusercontent.com/66390330/227490452-a623a1e8-eaca-4b16-80d3-442bb77eed7f.png)
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
