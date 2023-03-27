@@ -4,7 +4,7 @@
         <v-card-title>{{ product.title }}</v-card-title>
         <v-card-subtitle>{{ product.price }} руб.</v-card-subtitle>
         <v-card-actions>
-            <v-btn variant="flat" color="indigo">
+            <v-btn variant="flat" color="indigo" @click="basketStore.add(this.product)">
                 Купить
             </v-btn>
             <v-btn color="primary">
@@ -16,6 +16,7 @@
 
 <script setup>
 import { defineProps } from 'vue'
+const basketStore = useBasketStore();
 const { product } = defineProps(['product'])
 </script>
 

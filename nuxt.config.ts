@@ -3,6 +3,7 @@ import vuetify from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
   modules: [
+    '@pinia/nuxt',
     '@nuxtjs/google-fonts',
     async (options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => config.plugins.push(vuetify()))
@@ -11,4 +12,10 @@ export default defineNuxtConfig({
   // typescript: {shim:false},
   build: {transpile:['vuetify']},
   vite: { ssr: { noExternal: ['vuetify']}},
+  imports: {
+    dirs: ['./stores']
+  },
+  pinia: {
+    autoImports: ['defineStore', 'mapeStores', 'acceptHMRUpdate'],
+  }
 })

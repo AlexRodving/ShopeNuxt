@@ -24,6 +24,9 @@
 import { computed } from '@vue/reactivity';
 import ProductCard from '~~/components/ProductCard.vue'
 const { data: categories } = await useFetch('https://dummyjson.com/products/categories')
+
+const basketStore = useBasketStore()
+
 const cat = ref("smartphones")
 const funcBtn = (x)=>{ 
     cat.value = x

@@ -9,6 +9,11 @@
         <v-btn class="mr-4" variant="outlined" to="/">Главная</v-btn>
         <v-btn class="mr-4" variant="outlined" to="/about">О нас</v-btn>
         <v-btn class="mr-4" variant="outlined" to="/products">Каталог</v-btn>
+        <v-btn to="/basket" class="text-none" stacked>
+            <v-badge :content="basketStore.productsTotal" color="error">
+                <v-icon>mdi-cart-outline</v-icon>
+            </v-badge>
+        </v-btn>
       </div>
     </v-app-bar>
 
@@ -39,8 +44,10 @@
 <script setup>
 import { useTheme } from 'vuetify/lib/framework.mjs';
 
-const themes = useTheme()
+const basketStore = useBasketStore() //pinia
 
+
+const themes = useTheme()
 let theme = ref(themes.global.current.value.dark ? 'light' : 'dark')
 
 const toggleTheme = () => { 
