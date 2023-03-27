@@ -1,6 +1,7 @@
 <template>
    <v-container>
       <h1>About</h1>
+      <v-img src="img/888_2.jpg"></v-img>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam rem nesciunt corrupti officiis nam sit dicta autem
          veniam ut dignissimos! Impedit iure quaerat aut perspiciatis ipsum distinctio earum, dicta quibusdam eos? Enim
          sapiente labore perspiciatis dolorem, minus molestiae quo reprehenderit exercitationem placeat cumque tempore
