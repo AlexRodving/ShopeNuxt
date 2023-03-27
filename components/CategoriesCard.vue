@@ -10,7 +10,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
 const { cat } = defineProps(['cat'])
 </script>
 

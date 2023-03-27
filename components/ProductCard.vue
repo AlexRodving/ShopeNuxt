@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
 const basketStore = useBasketStore();
 const { product } = defineProps(['product'])
 </script>
