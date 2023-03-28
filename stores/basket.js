@@ -19,6 +19,12 @@ export const useBasketStore = defineStore("basket", {
                 this.basketContent.push(product);
                 this.quantity+1;
             }
+        },
+        remove(id){
+            let index = this.basketContent.findIndex((obj) => obj.id === id);
+            if(index !== -1){
+                this.basketContent.splice(index, 1);
+            }
         }
     }
 
