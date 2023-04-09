@@ -17,5 +17,16 @@ export default defineNuxtConfig({
   },
   pinia: {
     autoImports: ['defineStore', 'mapeStores', 'acceptHMRUpdate'],
+  },
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Josefin+Sans': true,
+      Lato: [100, 300],
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      },
+    }
   }
 })
